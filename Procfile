@@ -1,2 +1,2 @@
 web: gunicorn restApi_bank.wsgi --log-file -
-worker:  bundle exec rake jobs:work
+worker:  worker: celery -A restApi_bank worker -l info
