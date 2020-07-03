@@ -1,2 +1,2 @@
-web: gunicorn gettingstarted.wsgi --log-file -
+web: gunicorn restAPI_bank.wsgi --log-file -
 worker:  bundle exec rake jobs:work
